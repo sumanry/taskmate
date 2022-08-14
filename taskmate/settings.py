@@ -2,7 +2,7 @@ import os
 import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.Path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = 'django-insecure-xc5-2$q)w-0d#9n#v196t8i6$lt97%g$o!46218e+gk&my@t+('
 
@@ -73,7 +73,7 @@ WSGI_APPLICATION = 'taskmate.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR+'/db.sqlite3',
     }
 }
 
